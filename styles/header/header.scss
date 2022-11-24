@@ -36,29 +36,38 @@ header {
     align-self: center;
     justify-content: center;
     position: relative;
-    z-index: -5;
     div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         }
     h1, p , a {
             color: white;
-            text-align: center;
+        text-align: center;
+
         }
     button{
-            background-color: var(--color-span);
-            border: none;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.177);
-            border-radius: 2px;
-            padding: 5px;
-            margin-top: 20px;
-            a {
-                text-decoration: none;
-            }
+        background-color: var(--color-span);
+        border: none;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.177);
+        border-radius: 2px;
+        padding: 5px;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
         }
     }
+    button:hover {
+        background-color: rgb(45, 8, 98);
+        padding: 20px;
+        transition: 2s;
+    }
+    div:hover {
+        background-color: rgba(255, 255, 255, 0.293);
+        transition: 2s;
+    }
+}
 }
 
 @media (min-width:800px){
