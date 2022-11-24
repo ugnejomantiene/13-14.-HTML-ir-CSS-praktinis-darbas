@@ -28,31 +28,26 @@ header {
         }
     }
 }
+header {
     #hero {
-        background-color: var(--color-span);
-        height: 500px;
-        display: flex;
-        align-self: center;
-        justify-content: center;
-       
-        div {
+    background-color: var(--color-span);
+    height: 500px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    z-index: -5;
+    div {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            img {
-                height: 100%;
-                position: relative;
-                // z-index: -5;
-                display: none;
-
-            }
         }
-        h1, p , a {
+    h1, p , a {
             color: white;
             text-align: center;
         }
-        button {
+    button{
             background-color: var(--color-span);
             border: none;
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.177);
@@ -63,11 +58,11 @@ header {
                 text-decoration: none;
             }
         }
-       
     }
+}
 
-@media (min-width:800px) {
-    header
+@media (min-width:800px){
+    header {
         nav {
             justify-content: space-evenly;
             ul {
@@ -86,25 +81,13 @@ header {
                     transition: 0.5s;
                 }
             }
- 
-        }
         }
         #hero {
             background-image: url(./images/hiking2.jpg);
             background-size: cover;
             background-position: center;
-            button:hover {
-                padding: 5px 15px;
-                transition: 1s;
             }
-            div:hover {
-                background-color: rgba(255, 255, 255, 0.464);
-                transition: 1s;
-            }
-      
-  
         }
-  
-    
+    }
     
 

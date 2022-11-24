@@ -28,29 +28,26 @@ header .icons .fa-brands {
   color: var(--color-span);
 }
 
-#hero {
+header #hero {
   background-color: var(--color-span);
   height: 500px;
   display: flex;
   align-self: center;
   justify-content: center;
+  position: relative;
+  z-index: -5;
 }
-#hero div {
+header #hero div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#hero div img {
-  height: 100%;
-  position: relative;
-  display: none;
-}
-#hero h1, #hero p, #hero a {
+header #hero h1, header #hero p, header #hero a {
   color: white;
   text-align: center;
 }
-#hero button {
+header #hero button {
   background-color: var(--color-span);
   border: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.177);
@@ -58,7 +55,7 @@ header .icons .fa-brands {
   padding: 5px;
   margin-top: 20px;
 }
-#hero button a {
+header #hero button a {
   text-decoration: none;
 }
 
@@ -76,17 +73,9 @@ header .icons .fa-brands {
     opacity: 0.5;
     transition: 0.5s;
   }
-}
-#hero {
-  background-image: url(./images/hiking2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#hero button:hover {
-  padding: 5px 15px;
-  transition: 1s;
-}
-#hero div:hover {
-  background-color: rgba(255, 255, 255, 0.464);
-  transition: 1s;
+  header #hero {
+    background-image: url(./images/hiking2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }/*# sourceMappingURL=header.css.map */
