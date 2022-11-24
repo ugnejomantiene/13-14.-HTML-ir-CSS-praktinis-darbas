@@ -1,0 +1,42 @@
+#services {
+  background-color: var(--color-background-light);
+}
+#services .serviceCard {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+}
+#services .serviceCard div {
+  padding: var(--padding-around);
+  text-align: center;
+}
+#services .serviceCard div div {
+  display: inline-block;
+  width: 20px;
+  background-color: var(--color-span);
+  padding: 5px;
+}
+#services .serviceCard div h2 {
+  padding-bottom: 0;
+}
+
+@media (min-width: 800px) {
+  #services .serviceCard {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }
+  #services .serviceCard > div {
+    display: grid;
+    grid-template: repeat(2, 0.2fr)/0.2fr repeat(2, 1fr);
+    justify-items: start;
+    align-items: center;
+  }
+  #services .serviceCard > div h2 {
+    grid-area: 1/2/2/4;
+  }
+  #services .serviceCard > div p {
+    grid-area: 2/2/3/4;
+    text-align: justify;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=services.css.map */

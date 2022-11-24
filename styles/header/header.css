@@ -1,0 +1,92 @@
+header {
+  width: 100%;
+}
+header nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul {
+  display: none;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: black;
+}
+header .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .icons .fa-brands {
+  padding: 3px;
+  color: var(--color-span);
+}
+
+#hero {
+  background-color: var(--color-span);
+  height: 500px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+#hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hero div img {
+  height: 100%;
+  position: relative;
+  display: none;
+}
+#hero h1, #hero p, #hero a {
+  color: white;
+  text-align: center;
+}
+#hero button {
+  background-color: var(--color-span);
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.177);
+  border-radius: 2px;
+  padding: 5px;
+  margin-top: 20px;
+}
+#hero button a {
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  header nav {
+    justify-content: space-evenly;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li a:hover {
+    color: var(--color-span);
+  }
+  header nav .icons .fa-brands:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+}
+#hero {
+  background-image: url(./images/hiking2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#hero button:hover {
+  padding: 5px 15px;
+  transition: 1s;
+}
+#hero div:hover {
+  background-color: rgba(255, 255, 255, 0.464);
+  transition: 1s;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,39 @@
+#gallery .gallery {
+  background-color: var(--color-span);
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+#gallery .gallery div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gallery .gallery div div img {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+#gallery .gallery div div .fa-solid {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  color: rgb(253, 253, 253);
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  #gallery .gallery {
+    display: flex;
+    flex-direction: row;
+    gap: none;
+  }
+  #gallery .gallery div div:hover .fa-solid {
+    display: block;
+  }
+  #gallery .gallery div div:hover img {
+    opacity: 0.8;
+    transition: 1s;
+  }
+}/*# sourceMappingURL=gallery.css.map */

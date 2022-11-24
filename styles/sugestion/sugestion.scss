@@ -1,0 +1,44 @@
+#sugestion {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-span);
+    height: 300px;
+    h1 {
+        color: white;
+    }
+    div {
+        justify-content: center;
+        p {
+            text-align: center;
+        }
+    }
+    form {
+        text-align: center;
+        padding-bottom: 10px;
+        input {
+            border: 0;
+            padding: 5px;
+            box-shadow: none;
+            >::placeholder {
+                color: black;
+            }
+        }
+        .last {
+        ;
+
+        }
+    }
+
+}
+@media (min-width:800px){
+    form {
+        .last:hover {
+            background-color: var(--color-span);
+            border: 1px solid white;
+            color: white;
+        }
+        
+    
+    }
+    }
+

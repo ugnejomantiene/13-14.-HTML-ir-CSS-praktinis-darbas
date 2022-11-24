@@ -1,0 +1,50 @@
+:root {
+    --color-span: rgb(99, 66, 208);
+    --color-background-light: rgba(234, 241, 249, 0.619);
+    --padding-h1-top: 50px;
+    --padding-p-main: 10px;
+    --padding-bottom: 40px;
+    --padding-around: 30px;
+
+    --font-size-small: smaller;
+
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    }
+
+span {
+    color: var(--color-span);
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 30px;
+    padding-top: var(--padding-h1-top);
+    text-align: center;
+}
+h2 {
+    font-size: 1rem;
+    padding: 20px;
+}
+p {
+    font-size: 0.75rem;
+    line-height: 15px;
+    padding: var(--padding-p-main)
+    
+    
+}
+main > section > h1 {
+    text-align: center;
+}
+a {
+    font-size: 1rem;
+    margin: 10px;
+}
+#featured, #aboutUs {
+    margin: 0 50px;
+}
+

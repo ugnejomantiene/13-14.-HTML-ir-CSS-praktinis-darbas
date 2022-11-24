@@ -1,0 +1,60 @@
+#featured {
+    display: flex;
+    flex-direction: column;
+    >div {
+        padding: 20px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        .featuredCard {
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;            
+            .view {
+                img {
+                    height: 300px;
+                    width: 100%;
+                    position: relative;
+                    z-index: -10;
+                }
+                p {
+                    position: absolute;
+                    z-index: 5;
+                    margin-top: 20px;
+                    padding: 10px;
+                    background-color: var(--color-span);
+                }
+            }
+            .featuredLabel {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                :first-child {
+                    color: var(--color-span);
+                }
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: var(--color-span);
+        
+    }
+}
+@media (min-width:800px){
+    #featured {
+        display: grid;
+        grid-template: 0.3fr 1fr 1fr/1fr 1fr 1fr;
+        h1 {
+            grid-area: 1 / 1 / 2 / 4;
+        }
+        .featuredCard:hover {
+            box-shadow: rgba(2, 6, 14, 0.748) 0px 4px 8px -2px; 
+            transition: 1s;
+        }
+    }
+    a {
+        align-self: flex-end;
+    }
+}
+  

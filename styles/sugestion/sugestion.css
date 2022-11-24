@@ -1,0 +1,40 @@
+#sugestion {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-span);
+  height: 300px;
+}
+#sugestion h1 {
+  color: white;
+}
+#sugestion div {
+  justify-content: center;
+}
+#sugestion div p {
+  text-align: center;
+}
+#sugestion form {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#sugestion form input {
+  border: 0;
+  padding: 5px;
+  box-shadow: none;
+}
+#sugestion form input > ::-moz-placeholder {
+  color: black;
+}
+#sugestion form input > :-ms-input-placeholder {
+  color: black;
+}
+#sugestion form input > ::placeholder {
+  color: black;
+}
+@media (min-width: 800px) {
+  form .last:hover {
+    background-color: var(--color-span);
+    border: 1px solid white;
+    color: white;
+  }
+}/*# sourceMappingURL=sugestion.css.map */

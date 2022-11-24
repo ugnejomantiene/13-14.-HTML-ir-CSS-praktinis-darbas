@@ -1,0 +1,110 @@
+header { 
+    width: 100%;
+    nav {
+        height: 100px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        
+    }
+    ul {
+            display: none;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    font-size: 0.8em;
+                    color: black;
+                }
+            }
+    }
+    .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        .fa-brands {
+                padding: 3px;
+                color: var(--color-span);
+        }
+    }
+}
+    #hero {
+        background-color: var(--color-span);
+        height: 500px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+       
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 100%;
+                position: relative;
+                // z-index: -5;
+                display: none;
+
+            }
+        }
+        h1, p , a {
+            color: white;
+            text-align: center;
+        }
+        button {
+            background-color: var(--color-span);
+            border: none;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.177);
+            border-radius: 2px;
+            padding: 5px;
+            margin-top: 20px;
+            a {
+                text-decoration: none;
+            }
+        }
+       
+    }
+
+@media (min-width:800px) {
+    header
+        nav {
+            justify-content: space-evenly;
+            ul {
+                display: flex;
+            }
+            ul {
+                li {
+                    a:hover {
+                        color: var(--color-span);
+                    }
+                }
+            }
+            .icons {
+                .fa-brands:hover {
+                    opacity: 0.5;
+                    transition: 0.5s;
+                }
+            }
+ 
+        }
+        }
+        #hero {
+            background-image: url(./images/hiking2.jpg);
+            background-size: cover;
+            background-position: center;
+            button:hover {
+                padding: 5px 15px;
+                transition: 1s;
+            }
+            div:hover {
+                background-color: rgba(255, 255, 255, 0.464);
+                transition: 1s;
+            }
+      
+  
+        }
+  
+    
+    
+
